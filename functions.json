@@ -1,0 +1,105 @@
+{
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
+        {
+            "description": "Retrieves time series data for a specific indicator.",
+            "id": "GET_INDICATOR",
+            "name": "GET_INDICATOR",
+            "parameters": [
+                {
+                    "description": "The name of the indicator.",
+                    "name": "indicator",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix"
+            }
+        },
+        {
+            "description": "Retrieves all indicators for a specific country.",
+            "id": "GET_COUNTRY",
+            "name": "GET_COUNTRY",
+            "parameters": [
+                {
+                    "description": "The name of the country.",
+                    "name": "country",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix"
+            }
+        },
+        {
+            "description": "Retrieves time series data for a specific indicator and country.",
+            "id": "GET_INDICATOR_FOR_COUNTRY",
+            "name": "GET_INDICATOR_FOR_COUNTRY",
+            "parameters": [
+                {
+                    "description": "The name of the indicator.",
+                    "name": "indicator",
+                    "type": "string"
+                },
+                {
+                    "description": "The name of the country.",
+                    "name": "country",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix"
+            }
+        },
+        {
+            "description": "Retrieves the most recent values for a specific indicator.",
+            "id": "GET_RECENT_INDICATOR",
+            "name": "GET_RECENT_INDICATOR",
+            "parameters": [
+                {
+                    "description": "The name of the indicator.",
+                    "name": "indicator",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix"
+            }
+        },
+        {
+            "description": "Retrieves the most recent indicators for a specific country.",
+            "id": "GET_RECENT_COUNTRY",
+            "name": "GET_RECENT_COUNTRY",
+            "parameters": [
+                {
+                    "description": "The name of the country.",
+                    "name": "country",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix"
+            }
+        },
+        {
+            "description": "Retrieves the most recent value for a specific indicator and country.",
+            "id": "GET_RECENT_INDICATOR_FOR_COUNTRY",
+            "name": "GET_RECENT_INDICATOR_FOR_COUNTRY",
+            "parameters": [
+                {
+                    "description": "The name of the indicator.",
+                    "name": "indicator",
+                    "type": "string"
+                },
+                {
+                    "description": "The name of the country.",
+                    "name": "country",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix"
+            }
+        }
+    ]
+}
